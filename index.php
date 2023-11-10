@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,800&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/styles/login.css">
     <link rel="stylesheet" href="css/externalStyles/normalize.css">
 </head>
 <body>
