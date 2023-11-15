@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/externalStyles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,800&family=Press+Start+2P&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/807171747a.js" crossorigin="anonymous"></script>
- 
 </head>
 <body>
     <header>
