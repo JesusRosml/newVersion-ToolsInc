@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="css/registrationTools/registrationTools.css">
 </head>
 <body>
+    <?php
+    include 'server/session.php';
+    ?>
 <header>
         <img src="images/toolsImageLogo.svg" alt="">
         <nav>
@@ -39,26 +42,26 @@
                 <h1>Registro de trabajadores</h1>
             </div>
 
-            <form action="">
+            <form action="server/registerWorker.php" method="POST">
                 <label for="nameWorker">Ingrese el nombre del trabajador</label>
-                <input type="text" placeholder="Nombre del trabajador" id="nameWorker">
+                <input name="nameWorker" type="text" placeholder="Nombre del trabajador" id="nameWorker">
 
                 <label for="numberPhone">Ingrese el telefono del trabajador</label>
-                <input type="text" placeholder="Numero telefónico" id="numberPhone">
+                <input name="numberPhone" type="text" placeholder="Numero telefónico" id="numberPhone">
 
                 <label for="emailWorker">Ingrese el correo del trabajador</label>
-                <input type="email" placeholder="Correo del trabajador" id="emailWorker">
+                <input name="emailWorker" type="email" placeholder="Correo del trabajador" id="emailWorker">
 
                 <label for="observationTool">Ingrese el puesto de trabajo</label>
-                <input type="text" placeholder="Puesto de trabajo" id="observationTool">
+                <input name="workerArea" type="text" placeholder="Puesto de trabajo" id="observationTool">
 
-                <select>
+                <select name="stateWorker">
                     <option value="">Estado actual</option>
                     <option value="">Activo</option>
                     <option value="">De baja</option>
                 </select>
 
-                <button>Registrar trabajador</button>
+                <button type="submit">Registrar trabajador</button>
             </form>
         </section>
 

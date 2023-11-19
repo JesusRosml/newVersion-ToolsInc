@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/navegationApp.css">
 </head>
 <body>
+    <?php
+    include 'server/session.php';
+    ?>
     <header>
         <img src="images/toolsImageLogo.svg" alt="">
         <nav>
@@ -27,14 +30,14 @@
             </ul>
         </nav>
 
-        <button><span class="material-symbols-outlined">logout</span>Cerrar Sesión</button>
+        <button ><a href="server/logout.php"><span class="material-symbols-outlined">logout</span>Cerrar Sesión</a></button>
     </header>
 
     <main>
         <section>
             <article class="container-welcome">
                 <img src="images/toolsImageLogo.svg" alt="">
-                <h1>Bienvenido a <span>ToolsInc</span></h1>
+                <h1>Bienvenido a <span>ToolsInc</span> <?php echo $warehouseman?></h1>
 
                 <p>
                     ¡Bienvenido a ToolsInc! El sistema de control de almacenamiento más eficiente mediante 

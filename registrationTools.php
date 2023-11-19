@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="css/registrationTools/registrationTools.css">
 </head>
 <body>
+    <?php
+    include 'server/session.php';
+    ?>
     <header>
         <img src="images/toolsImageLogo.svg" alt="">
         <nav>
@@ -39,27 +42,26 @@
                 <h1>Registro de herramientas</h1>
             </div>
 
-            <form action="">
+            <form action="server/registerTool.php" method="POST">
                 <label for="typeTool">Ingrese el tipo de herramienta</label>
-                <input type="text" placeholder="Tipo de Herramienta" id="typeTool">
+                <input name="typeTool" type="text" placeholder="Tipo de Herramienta" id="typeTool">
 
                 <label for="brandTool">Ingrese la marca de la herramienta</label>
-                <input type="text" placeholder="Marca de la herramienta" id="brandTool">
+                <input name="brandTool" type="text" placeholder="Marca de la herramienta" id="brandTool">
 
                 <label for="modelTool">Ingrese el modelo de la herramienta</label>
-                <input type="text" placeholder="Modelo de la herramienta" id="modelTool">
+                <input name="modelTool" type="text" placeholder="Modelo de la herramienta" id="modelTool">
 
-                <select>
+                <select name="statusTool">
                     <option value="">Elija el estado de la herramienta</option>
                     <option value="bueno">Bueno</option>
                     <option value="regular">Regular</option>
                     <option value="malo">Malo</option>
                 </select>
-
                 <label for="dataRegister">Nombre del almacenista</label>
-                <input type="text" value="Massimo Avelardo" id="dataRegister" disabled>
-
-                <button>Registrar herramienta</button>
+                <!-- LE QUITE EL DISABLED POR QUE NO ME AGARRABA EL INPUT, DE CUALQUIER MANERA IGUAL VUELVE A PONERLO POR SI LAS DUDAS Y VERIFICALO POR TU CUENTA -->
+                <input name="warehousemanName" type="text" value='<?php echo $warehouseman;?>' id="dataRegister">
+                <button type="submit">Registrar herramienta</button>
             </form>
         </section>
 

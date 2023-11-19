@@ -25,7 +25,7 @@
             <h1>Iniciar Sesión</h1>
             <span>Te damos la bienvenida</span>
 
-            <form action="" method="POST">
+            <form action="server/login.php" method="POST">
                 <label for="user">Ingresa tu correo electrónico</label>
                 <input type="text" name="emailUser" id="email" placeholder="Correo electrónico">
 
@@ -36,12 +36,11 @@
                     <input type="checkbox" id="viewPassowrd" value="view_Password">
                     <label class="viewPassowrd" for="viewPassowrd">Mostrar contraseña</label>
                 </div>
-
-                <button id="validateButton" type="button">Iniciar Sesión</button>
+                <button id="validateButton" type="submit">Iniciar Sesión</button>
             </form>
         </div>
     </main>
 
-    <script type="module" src="js/loginFuntionScreen/index.js"></script>
+    <!--<script type="module" src="js/loginFuntionScreen/index.js"></script>-->
 </body>
 </html>
