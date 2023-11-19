@@ -25,7 +25,7 @@
             <h1>Iniciar Sesión</h1>
             <span>Te damos la bienvenida</span>
 
-            <form action="">
+            <form action="" method="POST">
                 <label for="user">Ingresa tu correo electrónico</label>
                 <input type="text" name="emailUser" id="email" placeholder="Correo electrónico">
 
