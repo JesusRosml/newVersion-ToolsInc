@@ -1,0 +1,111 @@
+main {
+    height: 724px;
+    width: 100%;
+    margin-top: 4%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #404756;
+    background: #1c1e21;
+}
+
+.container-form {
+    height: 80%;
+    width: 40%;
+    border-radius: 15px;
+    border: 1px solid #444950;
+    background: #191b21;
+}
+
+.container-title {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 14px 14px 0 0;
+    margin-bottom: 30px;
+    background: #23272f;
+}
+
+.container-title h1 {
+    font-family: 'EB Garamond', serif;
+    color: #969faf;
+    font-weight: 500;
+    font-size: 1.3rem;
+    padding-left: 2%;
+    text-align: center;
+}
+
+.container-form form {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form form label {
+    font-family: 'EB Garamond', serif;
+    color: #EEEEEE;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-left: 5%;
+
+}
+
+.container-form form input {
+    height: 35px;
+    width: 80%;
+    padding-left: 2%;
+    display: block;
+    border-radius: 5px;
+    color: #EEEEEE;
+    background: #23272f;
+    border: 2px solid #444950;
+    margin: 10px 0px 10px 5%;
+}
+
+.container-form form input:focus {
+    outline: none;
+    border: 2px solid #2c4453;
+}
+
+.container-form form input::placeholder {
+    color: #969faf;
+}
+
+.container-form form button {
+    height: 45px;
+    width: 83%;
+    display: block;
+    margin: 20px 0px 20px 5%;
+    color: #EEEEEE;
+    border: 2px solid #444950;
+    background: #23272f;
+}
+
+.container-imageCode {
+    height: 70%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #444950;
+    border-radius: 0px 10px 10px 0px;
+    background: linear-gradient(#a4c4cc, #2c4453);
+}
+
+.container-imageCode img {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.container-imageCode p {
+    font-family: 'EB Garamond', serif;
+    color: #EEEEEE;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+}

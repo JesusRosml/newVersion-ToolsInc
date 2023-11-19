@@ -1,0 +1,93 @@
+main {
+    height: auto;
+    width: 100%;
+    margin-top: 5.6%;
+    position: relative;
+    display: block;
+}
+
+.container-welcome {
+    margin-top: -1.4%;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: #FFFFFF;
+    background: #23272f;
+}
+
+.container-welcome img { margin-top: 2%; width: 115px; display: block; }
+
+.container-welcome h1 { font-family: 'EB Garamond', serif; font-size: 2.5rem; font-weight: 900; }
+
+.container-welcome p { font-family: 'EB Garamond', serif; padding: 0px 10%; font-size: 1.2rem; }
+
+.container-buttons { margin-top: 1%; width: 100%; display: flex; justify-content: center; align-items: center; position: relative;}
+
+.container-buttons a { text-decoration: none; }
+
+.container-buttons .first-link {
+    color: #FFFFFF;
+    background:  #0f7ca5;
+    border: none;
+    margin-right: 2%;
+    padding: 15px 15px;
+    border-radius: 20px;
+    font-weight: 900;
+    font-family: 'EB Garamond', serif;
+}
+
+.container-buttons .second-link {
+    color: #FFFFFF;
+    font-family: 'EB Garamond', serif;
+    border: 1px solid #404756;
+    padding: 15px 40px;
+    border-radius: 20px;
+    font-weight: 900;
+}
+
+.container-help {
+    height: 220px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid #404756;
+    background: #374151;
+}
+
+.container-help h3 {
+    padding-top: 1%;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.container-message {
+    margin-top: -2%;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-message a {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: rgba(66,153,225,.1);;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.container-message a img {
+    width: 30px;
+}

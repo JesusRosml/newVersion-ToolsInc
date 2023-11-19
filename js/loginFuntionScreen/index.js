@@ -1,5 +1,6 @@
 import { gettingDataInputs } from "./getting.data.js";
 import { serverRequestData } from "./serverCommunication.js";
+import { viewPasswordInput } from "./viewPassword.js";
 
 const elementsDOM = {
     emailUser: '#email',
@@ -14,5 +15,9 @@ const selectViewPassword = document.querySelector(elementsDOM.viewPassword);
 const selectButtonValidate = document.querySelector(elementsDOM.buttonValidate);
 
 selectButtonValidate.addEventListener('click', ()=> {
-    gettingDataInputs( selectEmail.value, selectPassword.value, serverRequestData );
+    gettingDataInputs( selectEmail, selectPassword, serverRequestData );
 });
+
+selectViewPassword.addEventListener('change', ()=> {
+    viewPasswordInput( selectPassword, selectViewPassword);
+})

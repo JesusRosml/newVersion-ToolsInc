@@ -12,6 +12,7 @@
     <!-- Hojas de estilo -->
     <link rel="stylesheet" href="css/externalStyles/normalize.css">
     <link rel="stylesheet" href="css/loginScreen/index.css">
+    <link rel="stylesheet" href="css/loginScreen/errorMessage.css">
 </head>
 <body>
     <main>
