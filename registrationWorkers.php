@@ -82,7 +82,7 @@
                 <button id="closeWarehouseman">Cerrar</button>
             </div>
 
-            <form action="" method="POST">
+            <form action="server/registerWarehouseman.php" method="POST">
                 <label for="nameWarehouseman">Ingrese el nombre completo</label>
                 <input name="nameWarehouseman" type="text" placeholder="Nombre del almacenista" id="nameWarehouseman">
 
