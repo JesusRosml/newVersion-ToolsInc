@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-mx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autorización de prestamo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- Tipografías de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +16,8 @@
     <link rel="stylesheet" href="css/externalStyles/normalize.css">
     <link rel="stylesheet" href="css/navegationApp.css">
     <link rel="stylesheet" href="css/loanAuthorization/loanAuthorization.css">
+    <link rel="stylesheet" href="css/loanAuth/index.css">
+    <link rel="stylesheet" href="css/loanAuthorization/container-AuthLoan.css">
 </head>
 <body>
     <header>
@@ -25,20 +28,28 @@
                 <li><a href="#" class="ancla-margin">Autorización de prestamos</a></li>
                 <li><a href="registrationTools.php" class="ancla-margin">Registro de herramientas</a></li>
                 <li><a href="registrationWorkers.php" class="ancla-margin">Registro de Trabajadores</a></li>
-                <li><a href="#" class="ancla-margin">Almacen</a></li>
             </ul>
         </nav>
 
         <button><span class="material-symbols-outlined">logout</span>Cerrar Sesión</button>
     </header>
     <main>
-        <section>
-            
-        </section>
-
-        <section>
-
+        <section class="container-nav">
+            <nav>
+                <ul>
+                    <li class="divisor-li">Sección de prestamos</li>
+                    <div class="container-one" id="section-one"><li>Empezar autorización de pestamos</li></div>
+                    <div class="container-two" id="section-two"><li>Prestamos de herramientas en procesos</li></div>
+                    <div class="container-three" id="section-three"><li>Historial de prestamos</li></div>
+                    <div class="container-divisor"></div>
+                    <li class="divisor-li modify-li">Sección de catalogos</li>
+                    <div class="container-Cone" id="section-four"><li>Ver todas las herramientas</li></div>
+                    <div class="container-Ctwo" id="section-five"><li>Ver todos los trabajadores</li></div>
+                </ul>
+            </nav>
         </section>
     </main>
+
+    <script type="module" src="js/loanAuth/index.js"></script>
 </body>
 </html>

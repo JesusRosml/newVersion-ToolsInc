@@ -1,9 +1,14 @@
-import { createWindowRegister } from "./createWindow.js";
+import { disableWindowSection, enableWindowSection} from "./pop-up.window.js";
 
-const elementsDom = {
-    buttonWindow: '#registerStorer',
+const elementsDOM = {
+    sectionWarehouseman: '.container-warehouseman',
+    buttonEnableSection: '#registerStorer',
+    buttonCloseSection: '#closeWarehouseman',
 }
 
-const buttonActiveWindow = document.querySelector(elementsDom.buttonWindow);
+const containerWarehouseman = document.querySelector( elementsDOM.sectionWarehouseman );
+const buttonEnableSection = document.querySelector( elementsDOM.buttonEnableSection );
+const buttonCloseSection = document.querySelector( elementsDOM.buttonCloseSection );
 
-buttonActiveWindow.addEventListener('click', createWindowRegister);
+buttonEnableSection.addEventListener('click', () => enableWindowSection(containerWarehouseman));
+buttonCloseSection.addEventListener('click', () => disableWindowSection( containerWarehouseman ));

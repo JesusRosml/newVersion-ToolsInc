@@ -84,27 +84,28 @@
 
             <form action="" method="POST">
                 <label for="nameWarehouseman">Ingrese el nombre completo</label>
-                <input name="nameWarehouseman" type="text" placeholder="Nombre del almacenista" id="nameWarehouseman">
+                <input required pattern="^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ\s]*$" name="nameWarehouseman" type="text" placeholder="Nombre del almacenista" id="nameWarehouseman">
 
                 <label for="phoneWarehouseman">Ingrese el telefóno</label>
-                <input name="phoneWarehouseman" type="text" placeholder="Numero telefónico" id="phoneWarehouseman">
+                <input required pattern="^\d{10}$" name="phoneWarehouseman" type="text" placeholder="Numero telefónico" id="phoneWarehouseman">
 
                 <label for="emailWarehouseman">Ingrese el correo electronico</label>
-                <input name="emailWarehouseman" type="email" placeholder="Correo electronico" id="emailWarehouseman">
+                <input required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}\.com$" name="emailWarehouseman" type="email" placeholder="Correo electronico" id="emailWarehouseman">
 
                 <label for="passwordFirstWarehouseman">Ingrese la contraseña</label>
-                <input name="passwordWarehouseman" type="password" placeholder="Contraseña" id="passwordFirstWarehouseman">
+                <input required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$" name="passwordWarehouseman" type="password" placeholder="Contraseña" id="passwordFirstWarehouseman">
 
                 <label for="passwordSecondWarehouseman">Confirme la contraseña</label>
-                <input name="passwordSecondWarehouseman" type="password" placeholder="Contraseña" id="passwordSecondWarehouseman">
+                <input required name="passwordSecondWarehouseman" type="password" placeholder="Contraseña" id="passwordSecondWarehouseman">
 
-                <select name="stateWharehouseman">
+                <select name="stateWharehouseman" id="stateWarehouseman">
                     <option value="">Estado actual</option>
                     <option value="Activo">Activo</option>
                     <option value="De baja">De baja</option>
                 </select>
 
-                <button type="submit">Registrar almacenista</button>
+                <!-- < type="submit" id="btnFormWarehouseman">Registrar almacenista</> -->
+                <input type="submit" id="btnFormWarehouseman" placeholder="Registrar almacenista">
             </form>
         </section>
     </main>
