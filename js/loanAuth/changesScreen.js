@@ -1,35 +1,44 @@
 import elemenstDOM from './index.js'
+import { requestAllTools, requestAllWorkers } from './renderViewAllTools/requestAllTools.js';
+import { renderViewHTML } from './renderViewAllTools/requestToolsHTML.js';
+import { renderViewWorkerHTML } from './renderViewAllWorkers/requestWorkersHTML.js';
+import { requestFileHTML } from './requestFileHTML.js';
+
+const sectionAuth = document.createElement('section');
+sectionAuth.setAttribute('class', 'container-AuthLoan');
+
+export const sectionAllTools = document.createElement('section');
+sectionAllTools.setAttribute('class', 'container-AllTools');
+
+export const sectionAllWorkers = document.createElement('section');
+sectionAllWorkers.setAttribute('class', 'container-AllWorkers');
+
+const displayNoneElements = ( elementsArray, elementVisible ) => {
+    elementsArray.forEach(element => {
+        if( element != elementVisible ) element.style.display = 'none';
+        elementVisible.style.display = 'flex';
+    });
+}
 
 export const renderAuthLoan = () => {
-    //Creando elementos HTML
-   const createSection = document.createElement('section');
-   const createFirstDiv = document.createElement('div');
-   const createSecondDiv = document.createElement('div');
+    const existsFirstDiv = document.querySelector('.container-firstDiv');
+    displayNoneElements([sectionAllTools, sectionAllWorkers], sectionAuth);
 
-   //Elementos del primer div element
-   const createParagraph = document.createElement('p');
-   const createSpan = document.createElement('span');
-   const createSelect = document.createElement('select');
-   const createFirstOption = document.createElement('option');
-   const createSecondOption = document.createElement('option');
-   const createThreeOption = document.createElement('option');
+    if( existsFirstDiv ) return;
 
-   createSpan.textContent = 'Jesus Rosml';
-   createFirstOption.textContent = 'Elija la persona que esta realizando el prestamo';
-   createSecondOption.textContent = 'Angel Ricardo';
-   createThreeOption.textContent = 'Addan Yerena';
+    const createFirstDiv = document.createElement('div');
+    const createSecondDiv = document.createElement('div');
+    const createVideo = document.createElement('video');
 
-   //Agreando atributos a los elementos que fueron creados anteriormente
-   createSection.setAttribute('class', 'container-AuthLoan');
-   createFirstDiv.setAttribute('class', 'container-firstDiv');
-   createSecondDiv.setAttribute('class', 'container-secondDiv');
+    createFirstDiv.setAttribute('class', 'container-firstDiv');
+    createSecondDiv.setAttribute('class', 'container-secondDiv');
+    createVideo.setAttribute('id', 'video-scanCode');
 
+    requestFileHTML( createVideo, createFirstDiv );
 
-    //Añadiendo los elementos hijos dentro de los contenedores padre
-   document.body.append( createSection );
-   createSection.append( createFirstDiv, createSecondDiv )
-   createFirstDiv.append(createSpan, createSelect );
-   createSelect.append( createFirstOption, createSecondOption, createThreeOption );
+    elemenstDOM.selectMain.append( sectionAuth );
+    createSecondDiv.append( createVideo );
+    sectionAuth.append( createFirstDiv, createSecondDiv );
 }
 
 export const renderProcessLoan = () => {
@@ -42,12 +51,20 @@ export const renderHistoryLoan = () => {
     console.log(elemenstDOM.sectionHistoryLoan);
 }
 
-export const renderViewAllTools = () => {
-    console.log('renderViewAllTools');
-    console.log(elemenstDOM.sectionViewTools);
+export const renderViewAllTools = async() => {
+    const jsonAllTools = await requestAllTools(); //retorna un arreglo con objetos
+    renderViewHTML( jsonAllTools );
+
+    displayNoneElements([sectionAuth, sectionAllWorkers], sectionAllTools);
+    
+    elemenstDOM.selectMain.append( sectionAllTools );
 }
 
-export const renderViewAllWorkers = () => {
-    console.log('renderViewAllWorkers');
-    console.log(elemenstDOM.sectionViewWorkers);
+export const renderViewAllWorkers = async() => {
+    const jsonAllWorkers = await requestAllWorkers(); //retorna un arreglo con objetos
+
+    renderViewWorkerHTML( jsonAllWorkers );
+    displayNoneElements([sectionAuth, sectionAllTools], sectionAllWorkers )
+    
+    elemenstDOM.selectMain.append( sectionAllWorkers );
 }

@@ -16,8 +16,12 @@
     <link rel="stylesheet" href="css/externalStyles/normalize.css">
     <link rel="stylesheet" href="css/navegationApp.css">
     <link rel="stylesheet" href="css/loanAuthorization/loanAuthorization.css">
-    <link rel="stylesheet" href="css/loanAuth/index.css">
+    <link rel="stylesheet" href="css/loanAuthorization/index.css">
     <link rel="stylesheet" href="css/loanAuthorization/container-AuthLoan.css">
+    <link rel="stylesheet" href="css/loanAuthorization/messageAlert.css">
+    <link rel="stylesheet" href="css/loanAuthorization/sectionAllTools.css">
+    <link rel="stylesheet" href="css/loanAuthorization/sectionAllWorkers.css">
+    <link rel="stylesheet" href="css/loanAuthorization/editInformationWorker.css">
 </head>
 <body>
     <header>
@@ -38,7 +42,8 @@
             <nav>
                 <ul>
                     <li class="divisor-li">Sección de prestamos</li>
-                    <div class="container-one" id="section-one"><li>Empezar autorización de pestamos</li></div>
+                    <div class="container-one" id="section-one"><li>Empezar autorización de prestamos</li></div>
+                    <div class="container-two" id="section-two"><li>Realizar entregas de herramientas</li></div>
                     <div class="container-two" id="section-two"><li>Prestamos de herramientas en procesos</li></div>
                     <div class="container-three" id="section-three"><li>Historial de prestamos</li></div>
                     <div class="container-divisor"></div>
@@ -50,6 +55,18 @@
         </section>
     </main>
 
-    <script type="module" src="js/loanAuth/index.js"></script>
+    <script src="js/librariesCodeQR/instascan.min.js" defer></script>
+    <script src="js/librariesCodeQR/jquery.min.js" defer></script>
+    <script type="module" src="js/loanAuth/index.js" defer></script>
+    <script type="module" src="js/loanAuth/renderTable.js" defer></script>
+
+    <?php
+        //Aquí estoy recibiendo los datos en formato JSON desde la solicitud 
+        $data_JSON = file_get_contents('php://input');
+
+        $new_data = json_decode($data_JSON, true);
+
+        print_r($new_data)
+    ?>
 </body>
 </html>

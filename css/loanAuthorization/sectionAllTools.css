@@ -1,0 +1,142 @@
+.container-AllTools {
+    height: 90%;
+    width: 77%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: #343A46;
+    border: 2px solid #404756;
+    margin: 0px 0px 0px 20%;
+    border-radius: 20px;
+}
+
+.viewTools-h3 {
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    padding: 0px 0px 0px 3%;
+}
+
+.viewTools-h4 {
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3rem;
+    padding: 0px 0px 0px 3%;
+}
+
+.form-viewTools {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.form-viewTools input {
+    height: 40px;
+    width: 50%;
+    border: 2px solid #404756;
+    background: #23272f;
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    padding-left: 1%;
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+.form-viewTools input::placeholder {
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+}
+
+.form-viewTools input:focus {
+    outline: none;
+}
+
+.form-viewTools button {
+    height: 40px;
+    width: 30%;
+    border: 2px solid #444950;
+    background: #23272f;
+    color: #EBECF0;
+}
+
+.table-viewTools {
+    height: 50%;
+    width: 93%;
+    margin: 2% 0px 0px 3%;
+}
+
+.table-viewTools thead {
+    width: 100%;
+    position: relative; 
+}
+
+.table-viewTools thead tr {
+    height: 40px;
+    width: 100%;
+    background: #23272f;
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+}
+
+.table-viewTools tbody {
+    width: 100%;
+    position: relative;
+}
+
+.table-viewTools tbody tr {
+    height: 40px;
+    width: 100%;
+    background: #23272f;
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+}
+
+.table-viewTools tbody tr td {
+    height: 40px;
+    text-align: center;
+    border: 1px solid #23272f;
+    background: #343A46;
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+}
+
+.container-buttonsControllers {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container-buttonsControllers button {
+    height: 40px;
+    width: 10%;
+    border: 2px solid #444950;
+    background: #23272f;
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    margin: 3% 2% 0px 2%;
+}
+
+.container-buttonsControllers .container-p {
+    height: 40px;
+    width: 10%;
+    border: 2px solid #444950;
+    background: #23272f;
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    margin: 3% 2% 0px 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,9 +1,184 @@
 .container-AuthLoan {
-    height: 83%;
-    width: 73%;
+    height: 90%;
+    width: 77%;
+    display: flex;
     position: absolute;
     background: #343A46;
     border: 2px solid #404756;
-    margin: -45% 0px 0px 23.5%;
+    margin: 0px 0px 0px 20%;
     border-radius: 20px;
+}
+
+.container-firstDiv {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    border-right: 2px solid #404756;
+    flex-direction: column;
+}
+
+.container-secondDiv {
+    height: 100%;
+    width: 30%;
+}
+
+.container-firstDiv h1 {
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    padding: 0px 0px 0px 3%;
+}
+
+.container-warehouseman {   height: 50px; width: 100%; display: flex; align-items: center;  }
+
+.container-warehouseman p {
+    padding-left: 3%;
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+}
+
+.container-warehouseman span {
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 2%;
+    border-right: 2px solid #404756;
+    background-color: rgba(66,153,225,.1);
+}
+
+.label-worker {
+    padding: 1% 0px 0px 3%;
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+}
+
+#workerName {
+    height: 40px;
+    width: 92.4%;
+    padding-left: 2%;
+    display: block;
+    border-radius: 5px;
+    color: #EEEEEE;
+    background: #23272f;
+    border: 2px solid #444950;
+    margin: 20px 0px 10px 3%;
+}
+
+.container-firstDiv p {
+    padding: 0px 0px 0px 3%;
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+}
+
+.container-firstDiv table {
+    height: 200px;
+    width: 93%;
+    display: block;
+    overflow-y: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0px 0px 0px 3%;
+    border-radius: 5px;
+    border: 2px solid #444950;
+    background: #23272f;
+}
+/* Ocultar scrollbar para Chrome, Safari y Opera */
+.container-firstDiv table::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ocultar scrollbar para IE, Edge y Firefox */
+.element-table {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.container-firstDiv table thead {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.container-firstDiv table thead th {
+    height: 40px;
+    width: 23%;
+    position: relative;
+    color: #EBECF0;
+    border-bottom: 2px solid #444950;
+}
+
+.container-firstDiv table tbody {
+    height: 200px;
+    width: 400px;
+    background: #EBECF0;
+}
+
+#btn-delete {
+    font-size: .8rem;
+}
+
+.container-firstDiv .observation-label {
+    font-family: 'EB Garamond', serif;
+    color: #EBECF0;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 2% 0px 2% 3%;
+}
+
+.container-firstDiv textarea {
+    height: 50px;
+    width: 91%;
+    margin: 0px 0px 0px 3%;
+    resize: none;
+    overflow-y: auto;
+    border: 2px solid #444950;
+    background: #23272f;
+    padding: 5px 5px 5px 5px;
+    color: #EBECF0;
+}
+
+.container-firstDiv textarea:focus {
+    outline: none;
+    border: 2px solid #444950;
+}
+
+.container-firstDiv textarea::placeholder {
+    color: #EBECF0;
+}
+
+.container-firstDiv button {
+    height: 35px;
+    width: 93%;
+    margin: 10px 0px 0px 3%;
+    border: 2px solid #444950;
+    background: #23272f;
+    color: #EBECF0;
+}
+
+#video-scanCode {
+    margin-top: -3%;
+    height: 244px;
+    width: 100%;
+    border-radius: 0px 38px 0px 0px;
+    display: block;
+}
+
+.containerButtons {
+    height: 50px;
+    width: 95.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.element-table {
+    height: 30px;
+    width: 23%;
+    text-align: center;
+    color: #EBECF0;
+    background: #343A46;
 }

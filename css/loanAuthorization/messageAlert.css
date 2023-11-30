@@ -1,0 +1,42 @@
+.container-message {
+    height: auto;
+    width: 22%;
+    position: absolute;
+    margin-top: -30%;
+    margin-left: 40%;
+    background: #343A46;
+    border: 2px solid #EBECF0;
+    border-radius: 10px;
+}
+
+.container-message p {
+    color: #EBECF0;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    display: block;
+    padding: 1% 10% 0px 10%;
+}
+
+.container-accept {
+    height: auto;
+    width: 100%;
+    border-radius: 0px 0px 9px 9px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1c1e21;
+}
+
+.container-accept button {
+    width: 40%;
+    margin: 10px 0px;
+    border: none;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgba(66,153,225,.1);
+}
