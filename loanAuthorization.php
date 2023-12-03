@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/loanAuthorization/sectionAllTools.css">
     <link rel="stylesheet" href="css/loanAuthorization/sectionAllWorkers.css">
     <link rel="stylesheet" href="css/loanAuthorization/editInformationWorker.css">
+    <link rel="stylesheet" href="css/loanAuthorization/sectionDeliverTools.css">
+    <link rel="stylesheet" href="css/loanAuthorization/sectionProcess.css">
 </head>
 <body>
     <header>
@@ -30,6 +32,7 @@
             <ul>
                 <li><a href="welcomeUser.php">Home</a></li>
                 <li><a href="#" class="ancla-margin">Autorización de prestamos</a></li>
+                <li><a href="deliverTools-page.php" class="ancla-margin">Entregar Herramienta</a></li>
                 <li><a href="registrationTools.php" class="ancla-margin">Registro de herramientas</a></li>
                 <li><a href="registrationWorkers.php" class="ancla-margin">Registro de Trabajadores</a></li>
             </ul>
@@ -43,9 +46,7 @@
                 <ul>
                     <li class="divisor-li">Sección de prestamos</li>
                     <div class="container-one" id="section-one"><li>Empezar autorización de prestamos</li></div>
-                    <div class="container-two" id="section-two"><li>Realizar entregas de herramientas</li></div>
                     <div class="container-two" id="section-two"><li>Prestamos de herramientas en procesos</li></div>
-                    <div class="container-three" id="section-three"><li>Historial de prestamos</li></div>
                     <div class="container-divisor"></div>
                     <li class="divisor-li modify-li">Sección de catalogos</li>
                     <div class="container-Cone" id="section-four"><li>Ver todas las herramientas</li></div>

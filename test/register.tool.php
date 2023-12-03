@@ -16,9 +16,9 @@
         <nav>
             <ul>
                 <li><i class="fa-solid fa-house"></i><a href="lectorQR.php">Autorización de prestamos</a></li>
+                <li><a href="deliverTools-page.php" class="ancla-margin">Entregar Herramienta</a></li>
                 <li><i class="fa-solid fa-file-circle-plus"></i><a href="QRHerramientas.php">Registro de herramientas</a></li>
                 <li><i class="fa-solid fa-users-viewfinder"></i><a href="QRTrabajadores.php">Registro de trabajadores</a></li>
-                <li><i class="fa-solid fa-box-archive"></i><a href="almacen.php">Almacen</a></li>
             </ul>
         </nav>
     </header>

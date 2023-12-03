@@ -27,9 +27,9 @@
             <ul>
                 <li><a href="welcomeUser.php">Home</a></li>
                 <li><a href="loanAuthorization.php" class="ancla-margin">Autorización de prestamos</a></li>
+                <li><a href="deliverTools-page.php" class="ancla-margin">Entregar Herramienta</a></li>
                 <li><a href="registrationTools.php" class="ancla-margin">Registro de herramientas</a></li>
                 <li><a href="registrationWorkers.php" class="ancla-margin">Registro de Trabajadores</a></li>
-                <li><a href="#" class="ancla-margin">Almacen</a></li>
             </ul>
         </nav>
 

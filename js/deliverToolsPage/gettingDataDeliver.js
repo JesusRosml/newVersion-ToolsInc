@@ -1,4 +1,6 @@
-export const gettingDataAuth = ( arrayIDs, lender, worker, observation ) => {
+import { windowMessageScan } from "../loanAuth/messageAlert.js";
+
+export const valueDataDeliver = ( arrayIDs, lender, worker, observation ) => {
     if( arrayIDs.length === 0 ) return;
     if( !worker.value ) return;
 
@@ -10,23 +12,23 @@ export const gettingDataAuth = ( arrayIDs, lender, worker, observation ) => {
     }
 }
 
-export const sendDataServer = ( arrayIDs, lender, worker, observation ) => {
-    const objectData = gettingDataAuth( arrayIDs, lender, worker, observation );
-    
-    if( typeof objectData === 'undefined' ) return;
+export const sendDataDeliver = ( arrayIDs, lender, worker, observation ) => {
+    const dataDeliver = valueDataDeliver( arrayIDs, lender, worker, observation );
+
+    if( typeof dataDeliver === 'undefined' ) return;
     
     const xhr = new XMLHttpRequest();
 
-    xhr.open('POST', 'server/getData2.php', true);
+    xhr.open('POST', 'server/deliverToolsFinish.php', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
 
-    const dataJSON = JSON.stringify(objectData);
-    console.log(dataJSON);
+    const dataJSON = JSON.stringify(dataDeliver);
 
     xhr.onload = ()=> {
         if(xhr.status === 200) {
             try {
                 let responseObject = JSON.parse(xhr.responseText);
+                alert( responseObject.data )
                 console.log(responseObject);
             } catch (error) {
                 console.error('Error parsing JSON:', error);
@@ -39,4 +41,5 @@ export const sendDataServer = ( arrayIDs, lender, worker, observation ) => {
     }
 
     xhr.send(dataJSON);
+    window.location.reload(true);
 }
